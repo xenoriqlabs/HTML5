@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Element</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Picture Element in HTML</h1>
+    <h2>Responsive Images</h2>
+
+    <picture>
+        <!-- Large screens: 650px and above -->
+        <source media="(min-width: 650px)" srcset="../Media/img-girl.png">
+
+        <!-- Medium screens: 465px to 649px -->
+        <source media="(min-width: 465px)" srcset="../Media/img-car.png">
+
+        <!-- Small screens: below 465px -->
+        <img src="../Media/img-food.png" alt="Responsive example image" width="350px" height="350px">
+    </picture>
+
+</body>
+
+</html>
