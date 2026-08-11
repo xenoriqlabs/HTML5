@@ -1,0 +1,110 @@
+<!-- 
+Question:
+
+Create an HTML Student Result Table using <colgroup> to style the table columns.
+
+The table should contain these columns:
+
+-> Student Name
+-> Roll No
+-> Marks
+-> Grade
+-> Result
+
+Add 4 students and use <colgroup> to apply different background colors to the columns. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Result</title>
+
+    <style>
+        table {
+            width: 70%;
+            margin: 40px auto;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0040CA;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <caption>Student Result</caption>
+
+        <colgroup>
+            <col style="width: 30%; background-color: lightblue;">
+            <col style="width: 20%; background-color: lightyellow;">
+            <col span="2" style="width: 15%; background-color: lightgreen;">
+            <col style="width: 20%; background-color: lightpink;">
+        </colgroup>
+
+        <tr>
+            <th>Student Name</th>
+            <th>Roll No</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <td>Saif</td>
+            <td>101</td>
+            <td>87</td>
+            <td>A</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Hasnat</td>
+            <td>102</td>
+            <td>76</td>
+            <td>B</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Tahir</td>
+            <td>103</td>
+            <td>92</td>
+            <td>A+</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Fatima</td>
+            <td>104</td>
+            <td>61</td>
+            <td>C</td>
+            <td>Pass</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
