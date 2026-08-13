@@ -1,0 +1,101 @@
+<!-- 
+Question:
+Create a Xenoriq Labs blog webpage using <main>, <article>, and <aside> semantic tags.
+
+Requirements:
+- Use <header>.
+    Add <h1> Xenoriq Labs.
+    Add <nav> with:
+        Home, About, Services, Blog
+
+- Use one <main>.
+    Inside <main>, create an <article>:
+    Heading: Introduction to HTML
+        Add a short paragraph about HTML.
+
+- After the article, create an <aside>.
+    Inside <aside> add:
+    <h3> Related Topics
+    A list containing:
+        CSS
+        JavaScript
+        Web Development
+        HTML5 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside tag</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            gap: 30px;
+        }
+
+        article {
+            width: 70%;
+        }
+
+        aside {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="text-align: center;">
+        <h1>Xenoriq Labs</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Introduction to HTML</h2>
+            <p>
+                HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It
+                uses elements and tags to define content such as headings, paragraphs, images, links, tables, and
+                forms. HTML provides the basic structure of a website, while CSS is used for styling and JavaScript
+                adds interactivity.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Related Topics</h3>
+            <ul>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">HTML5</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+
+</html>
