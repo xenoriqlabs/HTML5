@@ -1,0 +1,115 @@
+<!-- 
+Question:
+Create a simple Xenoriq Labs webpage using <header>, <nav>, <main>, <article>, <aside>, and <footer>.
+
+Requirements:
+1. Header
+    Website name: Xenoriq Labs
+    Navigation: Home About Services Blog
+
+2. Main
+    Create an <article>:
+    Introduction to HTML
+        Add a short paragraph about HTML.
+
+3. Aside
+    Create: Related Topics
+    List: CSS JavaScript Web Development
+
+4. Footer
+    Add: © 2026 Xenoriq Labs. All Rights Reserved.
+    and:Email: xenoriqlabs@gmail.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenoriq Labs</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #E6EDFB;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #0040CA;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center; background-color: #3D4655;">
+        <h1>Xenoriq Labs</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="display: flex;">
+        <article style="width: 70%;">
+            <h2>Introduction to HTML</h2>
+            <p>
+                HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It
+                uses elements and tags to define content such as headings, paragraphs, images, links, tables, and
+                forms. HTML provides the basic structure of a website, while CSS is used for styling and JavaScript
+                adds interactivity.
+            </p>
+        </article>
+
+        <aside style="width: 30%;">
+            <h3>Related Topics</h3>
+            <ul>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Web Development</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Xenoriq Labs. All rights Reserved.</p>
+        <p>Email: xenoriqlabs@gmail.com</p>
+    </footer>
+</body>
+
+</html>
