@@ -1,0 +1,54 @@
+<!--
+Question:
+Create a simple Xenoriq Labs webpage using
+<header>, <main>, and <data>.
+
+Requirements:
+
+1. Use <header>
+   Add <h1>: Xenoriq Labs
+
+2. Use <main>.
+
+3. Add <h2>:
+   Our Courses
+
+4. Create an unordered list.
+
+5. Add these three courses using <data>:
+
+   HTML Course       → 101
+   CSS Course        → 102
+   JavaScript Course → 103
+
+6. Use the value attribute for each course.
+
+Example format:
+
+<data value="101">HTML Course</data>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tag</title>
+</head>
+<body>
+    
+    <header style="text-align: center;">
+        <h1>Xenoriq Labs</h1>
+    </header>
+
+    <main>
+        <h2>Our Courses</h2>
+        <ul>
+            <li><data value="101">HTML Course</data></li>
+            <li><data value="102">CSS Course</data></li>
+            <li><data value="103">JavaScript Course</data></li>
+        </ul>
+    </main>
+
+</body>
+</html>

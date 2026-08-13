@@ -1,0 +1,68 @@
+<!--
+Question:
+Create a simple Xenoriq Labs webpage using
+<header>, <main>, and <meter>.
+
+Requirements:
+
+1. Use <header>
+   Add <h1>: Xenoriq Labs
+
+2. Use <main>.
+
+3. Add <h2>:
+   Developer Skill Levels
+
+4. Add three skills:
+
+   HTML — 90%
+   CSS — 80%
+   JavaScript — 70%
+
+5. Use <meter> for each skill.
+
+6. For every <meter>, use:
+   min="0"
+   max="100"
+
+7. Display the percentage beside each meter.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter Tag</title>
+</head>
+<body>
+    
+    <header style="text-align: center;">
+        <h1>Xenoriq Labs</h1>
+    </header>
+
+    <main>
+        <h2>Developer Skill Levels</h2>
+
+        <p>
+            HTML:
+            <meter value="90" min="0" max="100"></meter>
+            <strong>90%</strong>
+        </p>
+
+        <p>
+            CSS:
+            <meter value="80" min="0" max="100"></meter>
+            <strong>80%</strong>
+        </p>
+
+        <p>
+            JavaScript:
+            <meter value="70" min="0" max="100"></meter>
+            <strong>70%</strong>
+        </p>
+
+    </main>
+
+</body>
+</html>
