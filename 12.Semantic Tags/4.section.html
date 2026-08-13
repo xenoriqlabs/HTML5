@@ -1,0 +1,112 @@
+<!-- 
+Question:
+Create a Xenoriq Labs webpage using <main> and <section> semantic tags.
+
+Requirements:
+- Use <header> with:
+    <h1> Xenoriq Labs
+    <nav>
+        Home, About, Services, Contact
+- Use one <main>.
+    Inside <main>, create 3 <section> elements:
+        Section 1 — About Us
+            1. Add:
+            <h2>About Xenoriq Labs</h2>
+            A paragraph about Xenoriq Labs.
+
+        Section 2 — Our Services
+            2. Add: 
+            <h2>Our Services</h2>
+            A list:
+            Web Development
+            MERN Stack
+            AI
+            Machine Learning
+        Section 3 — Our Mission
+            3. Add:
+            <h2>Our Mission</h2>
+            A short paragraph about the company's mission. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Tag</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <h1>Xenoriq Labs</h1>
+
+        <nav style="list-style-type: none; list-style: none;">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Xenoriq Labs</h2>
+            <p>
+                Xenoriq Labs is a modern software house focused on building <strong>innovative, reliable, and
+                    scalable</strong> digital
+                solutions for businesses and individuals. We specialize in <mark>web development, software development,
+                    AI and
+                    machine learning, and modern technology solutions</mark>. Our goal is to transform ideas into
+                powerful digital
+                products through clean <em>coding, creative design, and cutting-edge technologies</em>. At Xenoriq Labs,
+                we are
+                committed to delivering high-quality solutions that help businesses grow, improve efficiency, and
+                succeed in
+                the digital world.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>MERN Stack</li>
+                <li>AI</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                At Xenoriq Labs, our mission is to turn innovative ideas into <strong>reliable, scalable, and
+                    user-friendly</strong>
+                digital solutions. We aim to help businesses grow through modern <mark>web development, software
+                    engineering,
+                    AI, and machine learning</mark> while maintaining quality, creativity, and customer satisfaction in
+                everything
+                we build.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
