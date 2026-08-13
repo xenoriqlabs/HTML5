@@ -1,0 +1,78 @@
+<!--
+Question:
+
+Create a simple Xenoriq Labs FAQ webpage using
+<header>, <main>, <section>, <details>, and <summary>.
+
+Requirements:
+
+1. Use <header>
+   Add <h1>: Xenoriq Labs
+
+2. Use <main>.
+
+3. Add a <section> with:
+   <h2>Frequently Asked Questions</h2>
+
+4. Create 3 <details> elements.
+
+5. Use these <summary> questions:
+
+   What is HTML?
+   What is CSS?
+   What is JavaScript?
+
+6. Inside each <details>, add a short paragraph
+   answering the question.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details & Summary</title>
+</head>
+
+<body>
+
+    <header style="text-align: center;">
+        <h1>Xenoriq Labs</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What is HTML?</summary>
+                <p>
+                    HTML (HyperText Markup Language) is the standard markup language used to create and structure web
+                    pages.
+                    HTML uses tags/elements to tell the browser how content should be organized, such as headings,
+                    paragraphs, images, links, lists, tables, and forms.
+                </p>
+            </details>
+
+            <details open>
+                <summary>What is CSS?</summary>
+                <p>
+                    CSS (Cascading Style Sheets) is a stylesheet language used to style and design HTML web pages.
+                    CSS controls the appearance of a website, including colors, fonts, spacing, backgrounds, borders,
+                    layouts, and responsiveness.
+                </p>
+            </details>
+
+            <details>
+                <summary>What is JavaScript?</summary>
+                <p>
+                    JavaScript (JS) is a programming language used to make web pages interactive and dynamic. It allows
+                    developers to add features such as button actions, animations, form validation, pop-ups, and dynamic
+                    content updates.
+                </p>
+            </details>
+        </section>
+    </main>
+</body>
+
+</html>
