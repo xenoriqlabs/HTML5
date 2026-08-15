@@ -1,0 +1,349 @@
+<!--
+Question:
+Create a simple Xenoriq Labs form.
+
+Requirements:
+
+1. Add a Full Name field:
+   - <label>: Full Name
+   - Connect it using for="fullname"
+   - <input type="text">
+   - id="fullname"
+   - name="fullname"
+   - placeholder="Enter your full name"
+   - Add required
+
+2. Add an Email field:
+   - <label>: Email
+   - Connect it using for="email"
+   - <input type="email">
+   - id="email"
+   - name="email"
+   - placeholder="Enter your email"
+   - Add required
+
+3. Add a Password field:
+   - <label>: Password
+   - Connect it using for="password"
+   - <input type="password">
+   - id="password"
+   - name="password"
+   - placeholder="Enter your password"
+   - Add required
+4. Add a Confirm Password field:
+   - <label>: Confirm Password
+   - Connect it using for="confirm-password"
+   - <input type="password">
+   - id="confirm-password"
+   - name="confirm-password"
+   - placeholder="Confirm your password"
+   - Add required
+
+5. Add a Gender field using radio buttons:
+   - Add a label: Gender
+   - Add Male radio button
+   - Add Female radio button
+   - Add Other radio button
+   - Use type="radio" for all
+   - Use the same name="gender" for all
+   - Give each radio button a unique id
+   - Connect each label using the correct for attribute
+   - Make Male selected by default using checked
+
+6. Add a Skills field using checkboxes:
+   - Add a label: Skills
+   - Add HTML
+   - Add CSS
+   - Add JavaScript
+   - Add React
+   - Use type="checkbox" for all
+   - Give each checkbox a unique id
+   - Connect each label using the correct for attribute
+   - Use name="skills" for all checkboxes
+
+7. Add a Course field using <select>:
+   - Add a label: Select Course
+   - Connect it using for="course"
+   - Use <select>
+   - id="course"
+   - name="course"
+   - Add these <option> elements:
+       HTML
+       CSS
+       JavaScript
+       MERN Stack
+       
+8. Add a Message field using <textarea>:
+   - Add <label>: Message
+   - Connect it using for="message"
+   - Use <textarea>
+   - id="message"
+   - name="message"
+   - placeholder="Enter your message"
+   - Use rows="5"
+   - Use cols="40"
+
+9. Add a Date of Birth field:
+   - Add <label>: Date of Birth
+   - Connect it using for="dob"
+   - Use <input type="date">
+   - id="dob"
+   - name="dob"
+   - Add required
+
+10. Add a Phone Number field:
+    - <label>: Phone Number
+    - Connect it using for="phone"
+    - Use <input type="tel">
+    - id="phone"
+    - name="phone"
+    - placeholder="Enter your phone number"
+    - Add required
+
+11. Add a Website URL field:
+    - <label>: Website URL
+    - Connect it using for="website"
+    - Use <input type="url">
+    - id="website"
+    - name="website"
+    - placeholder="https://example.com"
+
+12. Add an Age field:
+    - <label>: Age
+    - Connect it using for="age"
+    - Use <input type="number">
+    - id="age"
+    - name="age"
+    - placeholder="Enter your age"
+    - Add min="18"
+    - Add max="60"
+    - Add required
+
+13. Add an Experience Level field:
+    - <label>: Experience Level
+    - Connect it using for="experience"
+    - Use <input type="range">
+    - id="experience"
+    - name="experience"
+    - min="0"
+    - max="10"
+    - value="5"
+    - Add text: 0 = Beginner, 10 = Expert
+
+14. Add a Favorite Color field:
+    - <label>: Favorite Color
+    - Connect it using for="color"
+    - Use <input type="color">
+    - id="color"
+    - name="color"
+    - Add value="#0040CA"
+15. Add a Profile Picture field:
+    - <label>: Profile Picture
+    - Connect it using for="profile"
+    - Use <input type="file">
+    - id="profile"
+    - name="profile"
+    - Accept only image files using:
+      accept="image/*"
+
+16. Add a hidden field:
+    - Use <input type="hidden">
+    - id="course-id"
+    - name="course-id"
+    - value="103"
+
+17. Add a Submit button using <input type="submit">:
+    - Use <input type="submit">
+    - Set value="Register"
+    - Keep the existing form fields.
+    - Place it at the end of the form.
+
+18. Update the existing Full Name field:
+    - Add minlength="3"
+    - Add maxlength="50"
+    - Keep all existing attributes.
+
+19. Update the existing Phone Number field:
+
+    - Keep:
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+        required
+
+    - Add:
+        pattern="[0-9]{11}"
+
+20. Update the existing Full Name field:
+
+    - Keep all existing attributes.
+    - Add:
+      autocomplete="name"
+
+21. Update the existing Email field:
+
+    - Keep all existing attributes.
+    - Add:
+      autocomplete="email"
+
+22. Update the existing Password field:
+
+    - Keep all existing attributes.
+    - Add:
+      autocomplete="new-password"
+
+23. Update the existing Confirm Password field:
+
+    - Keep all existing attributes.
+    - Add:
+      autocomplete="new-password"
+
+24. Update the existing Full Name field:
+
+    - Keep all existing attributes.
+    - Add:
+      autofocus
+
+25. Update the existing Website URL field:
+
+    - Keep all existing attributes.
+    - Add:
+      readonly
+    - Set the value:
+      value="https://xenoriqlabs.com"
+
+26. Update the existing Experience Level field:
+
+    - Keep all existing attributes.
+    - Add:
+      disabled
+
+27. Update the existing Age field:
+
+    - Keep all existing attributes.
+    - Add:
+      step="1"
+
+21. Keep the existing Submit and Reset buttons.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Simple Form</title>
+</head>
+
+<body>
+
+   <form action="#">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" minlength="3" maxlength="50"
+         autocomplete="name" autofocus required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="new-password"
+         required><br>
+
+      <label for="confirm-password">Confirm Password</label><br>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+         autocomplete="new-password" required><br>
+
+      <label>Gender:</label><br>
+
+      <input type="radio" name="gender" id="male" value="Male" checked>
+      <label for="male">Male</label><br>
+
+      <input type="radio" name="gender" id="female" value="Female">
+      <label for="female">Female</label><br>
+
+      <input type="radio" name="gender" id="other" value="Other">
+      <label for="other">Other</label><br>
+
+      <label>Skills:</label><br>
+
+      <input type="checkbox" name="skills" id="html" value="HTML">
+      <label for="html">HTML</label><br>
+
+      <input type="checkbox" name="skills" id="css" value="CSS">
+      <label for="css">CSS</label><br>
+
+      <input type="checkbox" name="skills" id="js" value="JavaScript">
+      <label for="js">JavaScript</label><br>
+
+      <input type="checkbox" name="skills" id="react" value="React">
+      <label for="react">React</label><br>
+
+      <fieldset>
+         <legend>Course Selection</legend>
+
+         <labe for="course">Select Course</label>
+            <select name="course" id="course">
+               <option value="HTML">HTML</option>
+               <option value="CSS">CSS</option>
+               <option value="JavaScript">JavaScript</option>
+               <option value="MERN Stack">MERN Stack</option>
+            </select>
+      </fieldset>
+
+      <div>
+         <label for="message">Message:</label><br>
+         <textarea name="message" id="message" cols="40" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+
+      <div>
+         <label for="dob">Date of Birth:</label>
+         <input type="date" name="dob" id="dob" required>
+      </div>
+
+      <div>
+         <label for="phone">Phone Number:</label>
+         <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Enter your phone number" required>
+      </div>
+
+      <div>
+         <label for="website">Website URL</label>
+         <input type="url" name="website" id="website" readonly value="https://xenoriqlabs.com" placeholder="https://example.com">
+      </div>
+
+      <div>
+         <label for="age">Age:</label>
+         <input type="number" name="age" id="age" placeholder="Enter your age" min="18" max="60" step="1" required>
+      </div>
+
+      <div>
+         <label for="experience">Experience Level:</label>
+         <input type="range" name="experience" id="experience" min="0" max="10" value="5" disabled>
+         <span>0 = Beginner & 10 = Expert</span>
+      </div>
+
+      <div>
+         <label for="color">Favorite Color:</label>
+         <input type="color" name="color" id="color" value="#0040CA">
+      </div>
+
+      <div>
+         <label for="profile">Profile Picture</label>
+         <input type="file" name="profile" id="profile" accept="image/*">
+      </div>
+
+      <div>
+         <input type="hidden" name="course-id" id="course-id" value="103">
+      </div>
+
+      <input type="submit" value="Register">
+      <button type="reset">Reset</button>
+
+
+   </form>
+
+</body>
+
+</html>
