@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility (A11y)</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Accessibility (A11y) in HTML</h1>
+
+    <div>
+        <h2>1. alt — Images ke liye</h2>
+        <img src="./Media/xenoriq-labs-logo.jpeg" alt="Xenoriq Labs Logo" width="300px" height="300px">
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h2>2. &lt;label&gt; — Forms ke liye</h2>
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h2>3. Heading hierarchy using h2</h2>
+        <h3>Xenoriq Labs using h1</h3>
+        <h4>Our Services using h2</h4>
+        <h5>Web Development using h3</h5>
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h2>4. aria-label</h2>
+        <button aria-label="close menue">X</button>
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h2>5. aria-describedby</h2>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password"
+            aria-describedby="password-help">
+
+        <p id="password-help">
+            Password must contain at least 8 characters.
+        </p>
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h2>6. aria-labelledby</h2>
+        <h3 id="course-title">Our Courses</h3>
+        <section aria-labelledby="course-title">
+            <p>HTML, CSS and JavaScript courses are available.</p>
+        </section>
+    </div>
+    <br>
+    <hr>
+
+    <div>
+        <h2>7. role</h2>
+        <div role="alert">
+            Your password is incorrect.
+        </div>
+    </div>
+
+
+</body>
+
+</html>
