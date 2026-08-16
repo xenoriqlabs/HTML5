@@ -349,57 +349,71 @@ Requirements:
    <!--  GET → data URL mein
          POST → data request body mein -->
    <form action="/submit-form" method="post" enctype="multipart/form-data" novalidate autocomplete="on">
-      <label for="fullname">Full Name:</label><br>
-      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" minlength="3" maxlength="50"
-         autocomplete="name" autofocus required><br>
+      <div>
+         <label for="fullname">Full Name:</label><br>
+         <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" minlength="3"
+            maxlength="50" autocomplete="name" autofocus required>
+      </div>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required><br>
+      <div>
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+      </div>
 
-      <label for="password">Password:</label><br>
-      <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="new-password"
-         required><br>
+      <div>
+         <label for="password">Password:</label><br>
+         <input type="password" name="password" id="password" placeholder="Enter your password"
+            autocomplete="new-password" required>
+      </div>
 
-      <label for="confirm-password">Confirm Password</label><br>
-      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
-         autocomplete="new-password" required><br>
+      <div>
+         <label for="confirm-password">Confirm Password</label><br>
+         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+            autocomplete="new-password" required>
+      </div>
 
-      <label>Gender:</label><br>
+      <div>
+         <label>Gender:</label><br>
 
-      <input type="radio" name="gender" id="male" value="Male" checked>
-      <label for="male">Male</label><br>
+         <input type="radio" name="gender" id="male" value="Male" checked>
+         <label for="male">Male</label>
 
-      <input type="radio" name="gender" id="female" value="Female">
-      <label for="female">Female</label><br>
+         <input type="radio" name="gender" id="female" value="Female">
+         <label for="female">Female</label><br>
 
-      <input type="radio" name="gender" id="other" value="Other">
-      <label for="other">Other</label><br>
+         <input type="radio" name="gender" id="other" value="Other">
+         <label for="other">Other</label>
+      </div>
 
-      <label>Skills:</label><br>
+      <div>
+         <label>Skills:</label><br>
 
-      <input type="checkbox" name="skills" id="html" value="HTML" checked>
-      <label for="html">HTML</label><br>
+         <input type="checkbox" name="skills" id="html" value="HTML" checked>
+         <label for="html">HTML</label><br>
 
-      <input type="checkbox" name="skills" id="css" value="CSS">
-      <label for="css">CSS</label><br>
+         <input type="checkbox" name="skills" id="css" value="CSS">
+         <label for="css">CSS</label><br>
 
-      <input type="checkbox" name="skills" id="js" value="JavaScript">
-      <label for="js">JavaScript</label><br>
+         <input type="checkbox" name="skills" id="js" value="JavaScript">
+         <label for="js">JavaScript</label><br>
 
-      <input type="checkbox" name="skills" id="react" value="React">
-      <label for="react">React</label><br>
+         <input type="checkbox" name="skills" id="react" value="React">
+         <label for="react">React</label>
+      </div>
 
-      <fieldset>
-         <legend>Course Selection</legend>
+      <div>
+         <fieldset>
+            <legend>Course Selection</legend>
 
-         <labe for="course">Select Course</label>
-            <select name="course" id="course">
-               <option value="HTML">HTML</option>
-               <option value="CSS">CSS</option>
-               <option value="JavaScript">JavaScript</option>
-               <option value="MERN Stack" selected>MERN Stack</option>
-            </select>
-      </fieldset>
+            <labe for="course">Select Course</label>
+               <select name="course" id="course">
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="MERN Stack" selected>MERN Stack</option>
+               </select>
+         </fieldset>
+      </div>
 
       <div>
          <label for="message">Message:</label><br>
@@ -465,8 +479,10 @@ Requirements:
          </datalist>
       </div>
 
-      <input type="submit" value="Register">
-      <button type="reset">Reset</button>
+      <div>
+         <input type="submit" value="Register">
+         <button type="reset">Reset</button>
+      </div>
 
    </form>
 
