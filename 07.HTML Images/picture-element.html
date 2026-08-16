@@ -8,19 +8,28 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Picture Element in HTML</h1>
-    <h2>Responsive Images</h2>
+    <header>
+        <h1 style="text-align: center;">Picture Element in HTML</h1>
+    </header>
 
-    <picture>
-        <!-- Large screens: 650px and above -->
-        <source media="(min-width: 650px)" srcset="../Media/img-girl.png">
+    <hr style="border-top: 2px solid aquamarine; width: 80%;">
 
-        <!-- Medium screens: 465px to 649px -->
-        <source media="(min-width: 465px)" srcset="../Media/img-car.png">
+    <div>
+        <h2>Responsive Images</h2>
 
-        <!-- Small screens: below 465px -->
-        <img src="../Media/img-food.png" alt="Responsive example image" width="550px" height="465px">
-    </picture>
+        <picture>
+            <!-- Large screens: 650px and above -->
+            <source media="(min-width: 650px)" srcset="../Media/img-girl.png">
+
+            <!-- Medium screens: 465px to 649px -->
+            <source media="(min-width: 465px)" srcset="../Media/img-car.png">
+
+            <!-- Small screens: below 465px -->
+            <img src="../Media/img-food.png" alt="Responsive example image" width="550px" height="465px">
+        </picture>
+    </div>
+
+    <hr>
 
 </body>
 
